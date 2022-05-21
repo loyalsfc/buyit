@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+nav {
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #a4a1a2;
+    height: 15vh;
+    /* justify-content; */
+}
+.nav--logo{
+    display: flex;
+    align-items: center;
+}
+.nav--logo img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.nav--menu{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-items > li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 10px;
+}
+li a {
+    color: #a4a1a2;
+}
+li a:hover{
+    color: #ac8a70;
+    border-bottom: 2px solid #ac8a70;
+}
+#search{
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+.shopping-cart{
+    margin-right: 10px;
+    position: relative;
+    padding: 10px;
+}
+.shopping-cart #itemCount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+}
+.profile-container{
+    height: 35px;
+    width: 35px;
+    border: 2px solid #ac8a70;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-picture{
+    height: 33px;
+}
