@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 40px 100px;
+    text-align: center;
+}
+.imageContainer {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #878787;
+}
+h3{
+    margin: 20px 0 50px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper p {
+    margin:10px 0 10px;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}

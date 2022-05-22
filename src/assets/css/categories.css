@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.categories{
+    padding: 20px 100px;
+}
+.categories--wrapper{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.category{
+    /* width: 45%; */
+    overflow: hidden;
+    height: 300px;
+    background-color: brown;    
+    flex-direction: row;
+    border-radius: 25px;
+    margin: 10px;
+}
