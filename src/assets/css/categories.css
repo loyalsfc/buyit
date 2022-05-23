@@ -5,21 +5,31 @@
 }
 .categories{
     padding: 20px 100px;
+    text-align: center;
 }
 .categories--wrapper{
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; */
+    margin-top: -30px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    gap: 20px;
+    grid-template-columns: auto auto;
     padding: 10px;
 }
 .category{
-    /* width: 45%; */
     overflow: hidden;
-    height: 300px;
-    background-color: brown;    
-    flex-direction: row;
+    height: 250px;
+    background-color: brown;
     border-radius: 25px;
-    margin: 10px;
+    position: relative;
+}
+.categoryImage{
+    width: 100%;
+}
+.categoryName{
+    position: absolute;
+    top:70%;
+    font-size: 12px;
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #d0b6b0;
 }
