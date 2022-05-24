@@ -1,0 +1,44 @@
+.testimonials-container{
+    padding: 20px 100px;
+}
+.testimonials{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.testimony-wrapper{
+    border: 1px solid #b27c4e;
+    border-radius: 20px;
+    padding: 20px;
+    width: 280px;
+    margin: 0 15px;
+}
+.testimony-picture--wrapper{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.testimony-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.testimony-name{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.testimony-countryName{
+    font-size: 13px;
+    color: #7c7b77;
+    margin: 0 5px;
+}
+.testimony-note{
+    line-height: 22px;
+}
+.testimonials-container h3{
+    text-align: center;
+}
