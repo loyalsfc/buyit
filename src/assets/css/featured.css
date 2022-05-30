@@ -61,3 +61,32 @@
 .featured--readmore{
     color: #b27c4e;
 }
+@media screen and (max-width:500px) {
+    .featured-item{
+        padding: 0 0 10px;
+    }
+    .featured-item--container{
+        flex-direction: column;
+    }
+    .featured-item--description{
+        width: 100%;
+        padding: 10px;
+    }
+    .featured-item--description h5{
+        margin-bottom: 10px;
+    }
+    .item-name{
+        margin-bottom: 10px;
+    }
+    .featured-item-price{
+        margin: 10px 0;
+    }
+    .featured-item--image{
+        margin: 10px;
+        margin-bottom: -10px;
+    }
+    .featured-item--image img{
+        width: 100%;
+        border-radius: 5px;
+    }
+}

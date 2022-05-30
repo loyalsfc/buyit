@@ -38,4 +38,19 @@
     font-size: 0.8;
     margin-right: 10px;
 }
+@media screen and (max-width: 500px){
+    .banner{
+        height: 50vh;
+        padding: 10% 10px;
+    }
+    .banner--header{
+        font-size: 2rem;
+    }
+    .banner p{
+        max-width: 300px;
+    }
+    .banner p br{
+        display: none;
+    }
+}
 

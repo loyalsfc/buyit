@@ -33,3 +33,22 @@
     border-radius: 0 5px 5px 0;
     background-color: #d0b6b0;
 }
+@media screen and (max-width:500px) {
+    .categories{
+        padding: 10px;
+    }
+    .categories--wrapper{
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .category{
+        height: 100px;
+        border-radius: 10px;
+    }
+    .categoryName{
+        font-size: 10px;
+        width: 100px;
+        padding: 5px 0;
+        border-radius: 0 5px 5px 0;
+    }
+}

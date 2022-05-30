@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
+    /* overflow: hidden; */
 }
 .desktop--nav {
     padding: 20px 100px;
@@ -73,6 +74,9 @@ li a:hover{
 .profile-picture{
     height: 33px;
 }
+.mobile-nav--menu{
+    display: none;
+}
 
 @media screen and (max-width: 500px){
     .desktop--nav{
@@ -101,4 +105,15 @@ li a:hover{
         height: 20px;
         width: 20px;
     }
+    .navigation-items > li{
+        list-style-type: none;
+        display: block;
+        margin: 10px;
+    }
+    /* .nav--menu{
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    } */
 }

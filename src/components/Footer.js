@@ -40,8 +40,8 @@ function ContactUs(){
         <h5 className='footer-item--header'>CONTACT US</h5>
         <ul className='footer-item--items'>
             <li>68, Ajilosun, Ado-Ikere road, <br/>Ado-Ekiti, Nigeria</li>
-            <li><i class="fa-solid fa-phone"></i> (+234)810 412 3410 </li>
-            <li><i class="fa-solid fa-envelope"></i> info@buyit.com.ng</li>
+            <li><i className="fa-solid fa-phone"></i> (+234)810 412 3410 </li>
+            <li><i className="fa-solid fa-envelope"></i> info@buyit.com.ng</li>
         </ul>
     </div>
     )
@@ -68,9 +68,9 @@ function Subscribe(){
                 <button>SUBCRIBE</button>
             </div>
             <div className='social-icons'>
-                <i class="fa-brands fa-facebook-square"></i>
-                <i class="fa-brands fa-instagram-square"></i>
-                <i class="fa-brands fa-twitter-square"></i>
+                <i className="fa-brands fa-facebook-square"></i>
+                <i className="fa-brands fa-instagram-square"></i>
+                <i className="fa-brands fa-twitter-square"></i>
             </div>
         </div>
     )
