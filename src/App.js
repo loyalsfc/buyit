@@ -1,22 +1,16 @@
 import React from 'react'
-import Header from './components/Header'
-import Banner from './components/Banner'
-import Reason from './components/Reasons'
-import Categories from './components/Categories'
-import Featured from './components/Featured'
-import Testimonials from './components/Testimonials'
-import Footer from './components/Footer'
+import Home from './pages/Home'
+import Product from './pages/Product'
+import {Routes, Route} from "react-router-dom"
 
 export default function App(){
     return (
-        <>
-            <Header />
-            <Banner />
-            <Reason />
-            <Categories />
-            <Featured />
-            <Testimonials />
-            <Footer />
-        </>
+        <div>
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                    
+                <Route path='/products' element={<Product />}/>
+            </Routes>
+        </div>
     )
 }

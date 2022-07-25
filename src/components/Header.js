@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/logo/buyit.png'
 import '../assets/css/header.css'
+import {Link} from "react-router-dom"
 
 export default function Header(){
 
@@ -13,8 +14,8 @@ export default function Header(){
                 </div>
                 <div className='nav--menu'>
                     <ul className='navigation-items'>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>Products</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/products">Products</Link></li>
                         <li><a href='#'>Featured</a></li>
                         <li><a href='#'>About Us</a></li>
                     </ul>
