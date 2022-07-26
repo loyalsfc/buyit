@@ -1,19 +1,12 @@
 import React, {useState, useEffect, useContext} from "react"
 import {Link} from "react-router-dom"
-import Header from "../components/Header"
+import { Context } from "../Context"
 import Products from "../components/Products"
+import '../assets/css/products.css'
 
 function Product(){
-    const [products, setProducts] = useState([])
+    const {products} = useContext(Context)
 
-    useEffect(()=>{        
-        fetch('https://fakestoreapi.com/products')
-            .then(response => response.json())
-            .then(response => setProducts(response))
-            .catch(err => console.error(err));
-    },[])
-
-    console.log(products)
     let items = products.map(item => {
         return(
                 <Link to={`/products/${item.id}`}>
@@ -23,8 +16,7 @@ function Product(){
     })
     return(
         <>
-        <Header />
-        <div style={{display: "flex", flexWrap: "wrap"}}>
+        <div className="products-container">
             {items}
         </div>
         </>
