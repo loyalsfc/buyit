@@ -1,22 +1,23 @@
 import React from 'react'
+import Home from './pages/Home'
+import Product from './pages/Product'
+import {Routes, Route} from "react-router-dom"
+
 import Header from './components/Header'
-import Banner from './components/Banner'
-import Reason from './components/Reasons'
-import Categories from './components/Categories'
-import Featured from './components/Featured'
-import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
+import ProductDetails from './components/ProductDetails'
+
 
 export default function App(){
     return (
-        <>
+        <div>
             <Header />
-            <Banner />
-            <Reason />
-            <Categories />
-            <Featured />
-            <Testimonials />
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route exact path='/products' element={<Product />}/>
+                <Route path='/products/:productId' element={<ProductDetails />}></Route>
+            </Routes>
             <Footer />
-        </>
+        </div>
     )
 }
