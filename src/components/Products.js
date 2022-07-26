@@ -3,8 +3,6 @@ import React, {useState} from 'react'
 export default function Products(props){
     const [isHovered, setIsHovered] = useState(false)
 
-
-    console.log(isHovered)
     return(
         <div 
             className='product'

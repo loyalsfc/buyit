@@ -16,9 +16,9 @@ function Product(){
     })
     return(
         <>
-        <div className="products-container">
-            {items}
-        </div>
+            <div key={Math.random()} className="products-container">
+                {items}
+            </div>
         </>
     )
 }

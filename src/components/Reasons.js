@@ -4,7 +4,7 @@ import '../assets/css/reasons.css'
 export default function Reason(){
     return(
         <div className="container">
-            <h3>WHY SHOP BUYIT</h3>
+            <h3 className="reason-title">WHY SHOP BUYIT</h3>
             <div className='wrapper'>
                 <Why 
                     icon='truck'
