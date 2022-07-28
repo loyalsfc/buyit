@@ -57,4 +57,5 @@
 .description--detail-container > p{
     font-size: 0.9rem;
     margin-bottom: 10px;
+    line-height: 1.6rem;
 }

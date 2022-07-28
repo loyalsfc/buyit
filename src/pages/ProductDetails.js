@@ -4,10 +4,9 @@ import { Context } from "../Context"
 import "../assets/css/productDetails.css"
 
 function ProductDetails(){
-    const {products} = useContext(Context)
+    const {products, addToCart} = useContext(Context)
     const { productId } = useParams()
     let item = products.find(products => products.id == productId)
-    console.log(item)
     return(
         <div className="product-detail--container">
             <div className="product-detail">
@@ -20,7 +19,9 @@ function ProductDetails(){
                         <p>Free shipping on all products</p>
                     </h4>
                     <hr className="hr-rule"/>
-                    <button className="cart--product-detail"><i className="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <button className="cart--product-detail" onClick={()=> addToCart(item)}>
+                        <i className="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
                 </div>
             </div>
             <div className="description--detail-container">

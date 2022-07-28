@@ -4,7 +4,7 @@ import '../assets/css/testimony.css'
 export default function Testimonials(){
     return(
         <div className="testimonials-container">
-            <h3>TESTIMONIALS</h3>
+            <h3 className="reason-title">TESTIMONIALS</h3>
             <div className="testimonials">
                 <Testimony
                     image = 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500'
