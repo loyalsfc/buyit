@@ -13,7 +13,7 @@ function Product(){
     })
     return(
         <>
-            <div key={Math.random()} className="products-container">
+            <div className="products-container">
                 {items}
             </div>
         </>

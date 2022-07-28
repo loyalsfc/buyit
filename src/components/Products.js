@@ -18,7 +18,7 @@ export default function Products(props){
             onMouseEnter={()=> setIsHovered(true)}
             onMouseLeave={()=> setIsHovered(false)}
         >
-        <Link to={`/products/${props.id}`}>
+        <Link to={`/products/${props.prod.id}`}>
             <img src={props.prod.image} />
             <h5 className='product-title'>{props.prod.title}</h5>
             <span className='product-price'>${props.prod.price}</span>
