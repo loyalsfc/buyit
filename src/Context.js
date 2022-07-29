@@ -17,10 +17,25 @@ function ContextProvider(props){
         setCart(prevItem => [...prevItem, item])
     }
 
+    function removeFromCart(id){
+        // let modifycart = cart
+        // for(let i = 0; i < modifycart.length; i++){
+        //     if(id == modifycart[i].id){
+        //         modifycart.splice(i, 1)
+        //         setCart(modifycart)
+        //     }
+        // }
+        setCart(prevArray => {
+            return (
+                prevArray.filter(item => item.id != id)
+            )
+        })
+    }
+
     console.log(cart)
 
     return(
-        <Context.Provider value={{products, cart, addToCart}}>
+        <Context.Provider value={{products, cart, addToCart, removeFromCart}}>
             {props.children}
         </Context.Provider>
     )

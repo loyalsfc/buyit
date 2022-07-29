@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import ProductDetails from './pages/ProductDetails'
 import Cart from './pages/Cart'
+import NotFoundRoute from './pages/NotFoundRoute'
 
 
 export default function App(){
@@ -18,6 +19,7 @@ export default function App(){
                 <Route exact path='/products' element={<Product />}/>
                 <Route path='/products/:productId' element={<ProductDetails />}></Route>
                 <Route path='/cart' element={<Cart />}></Route> 
+                <Route path="*" element={<NotFoundRoute />}></Route>
             </Routes>
             <Footer />
         </div>
