@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Logo from '../assets/logo/buyit.png'
 import '../assets/css/header.css'
 import {Link} from "react-router-dom"
+import { Context } from '../Context'
 
 export default function Header(){
-
+    let {cart} = useContext(Context)
     return (
         <header>
             <nav className='desktop--nav'>
@@ -21,8 +22,10 @@ export default function Header(){
                     </ul>
                     <input type='search' id='search' placeholder='search' />
                     <div className='shopping-cart'>
-                        <span id='itemCount'>0</span>
-                        <i className="fa-solid fa-cart-shopping"></i>
+                        <Link to="/cart">
+                            <span id='itemCount'>{cart.length}</span>
+                            <i className="fa-solid fa-cart-shopping"></i>
+                        </Link>
                     </div>
                     <div className='profile-container'>
                         <img src='https://media.istockphoto.com/photos/natural-beauty-picture-id151611999?k=20&m=151611999&s=612x612&w=0&h=aHGjBmGUGBTxBeHomIDBYBxd-je0ccSOfnHF9v13i2M='
@@ -38,6 +41,7 @@ export default function Header(){
     )
 }
 function Headermobile(){
+    let {cart} = useContext(Context)
     function showNav(){
         let navMenu = document.querySelector('.mobile--menu');
         navMenu.addEventListener('click', () =>{
@@ -59,7 +63,7 @@ function Headermobile(){
                 <span>Buy it</span>
             </div>
             <div className='shopping-cart'>
-                <span id='itemCount'>0</span>
+                <span id='itemCount'>{cart.length}</span>
                     <i className="fa-solid fa-cart-shopping"></i>
             </div>
             <div className='profile-container'>

@@ -4,6 +4,7 @@ const Context = React.createContext()
 
 function ContextProvider(props){
     const [products, setProducts] = useState([])
+    const [cart, setCart] = useState([])
 
     useEffect(()=>{        
         fetch('https://fakestoreapi.com/products')
@@ -12,10 +13,29 @@ function ContextProvider(props){
             .catch(err => console.error(err));
     },[])
 
-    console.log(products)
+    function addToCart(item){
+        setCart(prevItem => [...prevItem, item])
+    }
+
+    function removeFromCart(id){
+        // let modifycart = cart
+        // for(let i = 0; i < modifycart.length; i++){
+        //     if(id == modifycart[i].id){
+        //         modifycart.splice(i, 1)
+        //         setCart(modifycart)
+        //     }
+        // }
+        setCart(prevArray => {
+            return (
+                prevArray.filter(item => item.id != id)
+            )
+        })
+    }
+
+    console.log(cart)
 
     return(
-        <Context.Provider value={{products}}>
+        <Context.Provider value={{products, cart, addToCart, removeFromCart}}>
             {props.children}
         </Context.Provider>
     )

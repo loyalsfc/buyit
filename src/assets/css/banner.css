@@ -31,8 +31,10 @@
     padding: 15px 35px;
     border-radius: 10px;
     border: none;
-    color: #927156;
     font-size: 1rem;
+}
+.shop-now a{
+    color: #927156;
 }
 .shop-now i {
     font-size: 0.8;

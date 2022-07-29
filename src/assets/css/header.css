@@ -64,6 +64,9 @@ li a:hover{
     right: 0;
     color: red;
 }
+.shopping-cart a{
+    color: #a4a1a2;
+}
 .profile-container{
     height: 35px;
     width: 35px;

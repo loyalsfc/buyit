@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useContext} from "react"
-import {Link} from "react-router-dom"
 import { Context } from "../Context"
 import Products from "../components/Products"
 import '../assets/css/products.css'
@@ -9,16 +8,14 @@ function Product(){
 
     let items = products.map(item => {
         return(
-                <Link to={`/products/${item.id}`}>
-                    <Products key={item.id} img={item.image} title={item.title} price={item.price} />
-                </Link>
+                <Products key={item.id} prod={item} />
             )
     })
     return(
         <>
-        <div className="products-container">
-            {items}
-        </div>
+            <div className="products-container">
+                {items}
+            </div>
         </>
     )
 }

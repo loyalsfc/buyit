@@ -4,7 +4,7 @@ import '../assets/css/categories.css';
 export default function Categories(){
     return(
         <div className="categories">
-            <h3>CATEGORIES</h3>
+            <h3 className="reason-title">CATEGORIES</h3>
             <div className="categories--wrapper">
                 <Category 
                     imageLink='https://images.unsplash.com/photo-1601790656359-bb3b8e1937f2?ixlib=rb-1.2.1&raw_url=true&q=60&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500'

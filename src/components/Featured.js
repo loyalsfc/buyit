@@ -4,7 +4,7 @@ import '../assets/css/featured.css'
 export default function Featured(){
     return(
         <div className="featured-item">
-            <h3>FEATURED ITEM</h3>
+            <h3 className='reason-title'>FEATURED ITEM</h3>
             <div className='featured-item--container'>
                 <div className="featured-item--description">
                     <h5>New Season</h5>
