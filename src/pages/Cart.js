@@ -17,34 +17,24 @@ function Cart(){
                 price={product.price} 
             />
         )
-    })
-
-//     oduct-image">
-//     <img src={props.img} />
-//     <p>{props.title}</p>
-//     <button><i className="fa-solid fa-trash"></i></button>
-// </td>
-// <td><input type="number" id={`item${props.id}`} name={`item${props.id}`} /> </td>
-// <td>{props.price}    
+    }) 
 
     return(
         <div className='cart-wrapper'>
             <div className='cart-list'>
                 <h4 className='order-summary-title'>My Cart</h4>
                 <hr/>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product Detail</th>
-                            <th>Quantity</th>
-                            <th>Price</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                {/* <div> */}
+                    <div className='cart-header-wrapper'>
+                        <div className='cart-product-detail'>Product Detail</div>
+                        <div className='cart-quantity'>Quantity</div>
+                        <div className='cart-price'>Price</div>
+                        <div className='cart-total'>Total</div>
+                    </div>
+                    {/* <div className='cart-body-wrapper'> */}
                         {cartlist}
-                    </tbody>
-                </table>
+                    {/* </div>   */}
+                {/* </div> */}
             </div>
             <div className='order-summary'>
                 <h4 className='order-summary-title'>Order Summary</h4>

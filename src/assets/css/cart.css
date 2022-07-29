@@ -9,11 +9,23 @@
     padding: 30px;
     color: #707071;
 }
-table{
+.cart-header-wrapper{
     width: 100%;
     margin: 30px 0;
     font-size: 0.7rem;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.product-content-wrapper{
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.cart-product-detail{
+    width: 50%;
 }
 tr:hover {background-color: #ddd;}
 .product-image{
