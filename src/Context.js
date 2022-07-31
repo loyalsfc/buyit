@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 const Context = React.createContext()
 
-
 function ContextProvider(props){
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
@@ -18,13 +17,6 @@ function ContextProvider(props){
     }
 
     function removeFromCart(id){
-        // let modifycart = cart
-        // for(let i = 0; i < modifycart.length; i++){
-        //     if(id == modifycart[i].id){
-        //         modifycart.splice(i, 1)
-        //         setCart(modifycart)
-        //     }
-        // }
         setCart(prevArray => {
             return (
                 prevArray.filter(item => item.id != id)

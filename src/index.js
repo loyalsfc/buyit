@@ -5,7 +5,6 @@ import { ContextProvider } from './Context';
 import App from './App'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
 ReactDOM.render(
     <ContextProvider>
         <Router>
